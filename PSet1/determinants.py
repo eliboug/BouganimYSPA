@@ -10,6 +10,7 @@ def determinant2d(arr:np.ndarray):
     return determinant
 # method to get determinate of a 3d array
 def determinant3d(arr:np.ndarray):
+    # setting all variables for ease of use
     a = arr[0, 0]
     b = arr[0,1]
     c = arr[0,2]
