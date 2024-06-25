@@ -22,7 +22,7 @@ def conversion():
         sexagesimal_arcminutes = int(sexagesimal_arcminutes)
         sexagesimal_arcseconds = int(sexagesimal_arcseconds)
         # TODO: account for sig figs
-        print(f"{sexagesimal_degrees}° {sexagesimal_arcminutes:02d}' {sexagesimal_arcseconds:4d}\"")
+        print(f"{sexagesimal_degrees}° {sexagesimal_arcminutes:02d}' {sexagesimal_arcseconds:.2f}\"")
     # handle unexpected responses
     else: 
         print("Please enter either 'decimal' or 'sexagesimal'.")
