@@ -2,7 +2,7 @@ def julian_day_to_gmst(jdn):
     # 2451545 is the Julian day number of 2000 at midnight, so subtract to figure out the number of days since then
     d = jdn - 2451545
     # current gmst in hours
-    gmst_hours = 18.697374558 + 24.06570982441908 * d
+    gmst_hours = 18.697374558 + (366.244/365.244 * 24) * d
     # where we are in the cycle
     gmst_hours = gmst_hours % 24
     return gmst_hours
@@ -32,3 +32,7 @@ gmst_hours = julian_day_to_gmst(jdn)
 lst_hours = gmst_to_lst(gmst_hours, longitude)
 lst_h, lst_m, lst_s = hours_to_hms(lst_hours)
 print(f"LST: {lst_h}h {lst_m}m {lst_s:.2f}s")
+
+
+-72.9279
+2460500.6666666665
