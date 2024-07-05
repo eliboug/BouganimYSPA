@@ -34,5 +34,5 @@ lst_h, lst_m, lst_s = hours_to_hms(lst_hours)
 print(f"LST: {lst_h}h {lst_m}m {lst_s:.2f}s")
 
 
--72.9279
-2460500.6666666665
+# longitude of New Haven, CT: -72.9279
+# Julian Day Number of day outlined in PSet: 2460500.6666666665
